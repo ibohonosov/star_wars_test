@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'jedi-outline';
+    src: url('./assets/fonts/Starjhol.ttf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p, h3 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+a {
+    text-decoration: none;
+}
