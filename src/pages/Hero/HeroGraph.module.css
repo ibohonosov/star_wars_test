@@ -1,0 +1,22 @@
+.graph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: 70vh;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+}
+.btn_back {
+    position: absolute;
+    opacity: 30;
+    cursor: pointer;
+    rotate: 180deg;
+    transition: transform 0.3s ease;
+}
+.btn_back:hover {
+    opacity: 100;
+    transform: translateX(-0.25rem);
+}

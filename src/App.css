@@ -1,13 +1,25 @@
 body {
     margin: 0;
+    padding: 0;
 }
 .App {
     padding: 20px;
 }
 .background {
-    background: url(./assets/stars.png) top center #000;
+    background: url(assets/background/stars.png) repeat top center #000;
 }
-
+.flickering {
+    background: url(assets/background/twinkling.png) repeat top center;
+    animation: move-twinking 1000s linear infinite;
+}
+@keyframes move-twinking {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -10000px 5000px;
+    }
+}
 .background, .flickering {
     position: fixed;
     display: block;
@@ -34,6 +46,3 @@ body {
     line-height: 1;
 
 }
-
-
-
